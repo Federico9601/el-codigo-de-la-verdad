@@ -1,13 +1,13 @@
-// Script básico para futuras funcionalidades
-console.log("El Código de la Verdad - Script cargado");
+document.getElementById('colaboracion-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const mensaje = document.getElementById('mensaje').value;
 
-
-// Ejemplo: Activar la clase "active" dinámicamente (opcional, puedes implementarlo)
-document.addEventListener("DOMContentLoaded", function() {
-    const currentPage = window.location.pathname.split("/").pop();
-    document.querySelectorAll("nav a").forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-        }
-    });
+    if (nombre && email && mensaje) {
+        alert(Gracias, ${nombre}! He recibido tu mensaje. Te contactaré pronto.);
+        this.reset();
+    } else {
+        alert('Por favor, completa todos los campos.');
+    }
 });
