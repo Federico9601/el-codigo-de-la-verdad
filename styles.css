@@ -5,95 +5,99 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e6f4ea; /* Verde claro (mantenido) */
-  color: #333; /* Gris oscuro (mantenido) */
+  background-color: #1a1a1a;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #6b4e31; /* Marrón cálido (mantenido) */
-  color: white;
-  text-align: center;
-  padding: 15px;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-nav a:hover {
-  color: #d4a373; /* Dorado (mantenido) */
+header p {
+    margin: 5px 0;
+    font-style: italic;
 }
 
-section {
-  padding: 30px;
-  text-align: center;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    margin: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #212fd1;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #212fd1;
+}
+
+nav ul li a.active {
+    color: #212fd1;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto 60px auto; /* Añadido margen inferior */
+    padding: 0 20px;
+}
+
+section, article {
+    margin-bottom: 40px;
 }
 
 h2 {
-  color: #355E3B; /* Verde pino para títulos */
+    color: #212fd1;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-li {
-  margin: 15px 0;
-  font-size: 1.1em;
-}
-
-#inicio, #servicios, #contacto {
-  background-color: #e6f4ea; /* Mantenido */
-}
-
-#sobre-mi {
-  background-color: #F4E4BC; /* Beige arenoso */
-  border-top: 2px solid #355E3B; /* Verde pino para borde superior */
-  border-bottom: 2px solid #355E3B; /* Verde pino para borde inferior */
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #d4a373; /* Dorado (mantenido) */
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #b5895d; /* Dorado oscuro (mantenido) */
+p {
+    font-size: 1.1em;
 }
 
 a {
-  color: #6b4e31; /* Marrón cálido (mantenido) */
-  text-decoration: none;
+    color: #212fd1;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #355E3B; /* Verde pino al pasar el ratón */
+    text-decoration: underline;
 }
 
 footer {
-  background-color: #6b4e31; /* Marrón cálido (mantenido) */
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    p {
+        font-size: 1em;
+    }
 }
