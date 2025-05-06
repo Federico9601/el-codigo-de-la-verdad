@@ -147,3 +147,15 @@ nav a.active {
     font-weight: bold;
     color: #007bff;
 }
+nav ul li a {
+    text-decoration: none;
+    color: #ff4444;
+    margin: 0 15px;
+}
+nav ul li a:hover {
+    color: #ff7777;
+}
+nav ul li a.active {
+    font-weight: bold;
+    color: #ff4444;
+}
