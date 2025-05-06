@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="conspiraciones, actualidad, verdad oculta">
-    <meta name="description" content="El Código de la Verdad: desenmascarando las mentiras del poder">
-    <title>El Código de la Verdad - Inicio</title>
+    <title>EL CÓDIGO DE LA VERDAD</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>El Código de la Verdad</h1>
-        <p>Desenmascarando las mentiras del poder</p>
+        <h1>¡Explora!</h1>
         <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="articulos.html">Mis Artículos</a></li>
-                <li><a href="pdfs.html">Mis PDFs</a></li>
-                <li><a href="opinion.html">Sección de Opinión</a></li>
-                <li><a href="redes.html">Redes</a></li>
-            </ul>
+            <a href="#inicio">Inicio</a>
+            <a href="#articulos">Artículos</a>
+            <a href="#acerca">Acerca de mí</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
     <main>
         <section id="inicio">
-            <h2>Apagón en España, 2025: ¿Y si no fue un accidente?</h2>
-            <p>El pasado 28 de abril de 2025, un apagón masivo dejó a España a oscuras, paralizando desde los cafés hasta los circuitos informáticos. Según la prensa internacional, este evento marcó un hito histórico por ser el apagón más extenso de los últimos años y los grandes medios ya lo han calificado como la tragedia del apagón de España.</p>
-            <p>Este apagón no solo paralizó ciudades, sino que también evidenció la fragilidad de nuestra red eléctrica y la falta de preparación de las autoridades. ¿Por qué se ocultó información? ¿Fue realmente un accidente o hay algo más detrás? En <em>El Código de la Verdad</em>, cuestionamos la narrativa oficial y buscamos respuestas.</p>
-            <p><a href="apagon-espana-2025.html">Lee el artículo completo: Apagón España 2025: una verdad a medias en la oscuridad</a></p>
+            <h2>Bienvenidos</h2>
+ </section>
+        <section id="articulos">
+            <h2>Mis Artículos</h2>
+            <div class="articulos-grid">
+                <article>
+                    <h3>Montaje de un PC</h3>
+                    <img src="assets/imagen1.jpg" alt="PC montado" class="article-img">
+                    <p>Aquí explico cómo ensamblar un ordenador desde cero: elegir componentes, conectar la placa base, instalar el procesador, etc. Este proyecto me tomó una semana y aprendí mucho sobre compatibilidad.</p>
+                    <a href="assets/articulo1.pdf" class="btn" download>Descargar PDF</a>
+                </article>
+                <article>
+                    <h3>Mantenimiento de Software</h3>
+                    <img src="assets/imagen2.jpg" alt="Mantenimiento software" class="article-img">
+                    <p>En este artículo detallo cómo optimizar Windows, eliminar programas innecesarios y solucionar errores comunes. Incluye una guía para actualizar drivers.</p>
+                    <a href="assets/articulo2.pdf" class="btn" download>Descargar PDF</a>
+                </article>
+  </div>
+        </section>
+        <section id="acerca">
+            <h2>Acerca de mí</h2>
+        </section>
+        <section id="contacto">
+            <h2>Colabora conmigo</h2>
+            <p>¿Tienes ideas o quieres colaborar? Déjame un mensaje:</p>
+            <form id="colaboracion-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" placeholder="Tu correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" placeholder="¿Cómo podemos colaborar?" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>© 2025 El Código de la Verdad. Todos los derechos reservados.</p>
+        <p>© 2025 Carlos. Todos los derechos reservados.</p>
     </footer>
     <script src="script.js"></script>
 </body>
