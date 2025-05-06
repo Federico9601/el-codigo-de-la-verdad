@@ -84,7 +84,7 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
-    position: justified;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -101,6 +101,6 @@ footer {
         font-size: 1em;
     }
     footer {
-        position: justified;
+        position: relative;
     }
 }
